@@ -140,7 +140,7 @@ public class StateService {
         // ── TAMIL NADU ────────────────────────────────────
         add(new State("tamil-nadu", "Tamil Nadu", "South",
             "Tamarind, curry leaves, and temple-town classics.",
-            stateImg("Meenakshi_Amman_Temple_-_Madurai_-_India.jpg"),
+            stateImg("Meenakshi_Amman_Temple,_Madurai.JPG"),                     // ✓ verified
             List.of(
                 dish("tamilnadu-1", "Chettinad chicken",
                     "Fiery, aromatic chicken curry with a roasted spice blend.",
@@ -188,7 +188,7 @@ public class StateService {
         // ── GOA ───────────────────────────────────────────
         add(new State("goa", "Goa", "West",
             "Portuguese spice trade meets coastal Konkan cooking.",
-            stateImg("Se_Cathedral,_Goa.jpg"),
+            stateImg("Candolim_Beach_Goa.jpg"),                                 // ✓ verified
             List.of(
                 dish("goa-1", "Fish curry rice",
                     "Coconut and kokum fish curry, the daily staple.",
