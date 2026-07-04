@@ -13,15 +13,21 @@
 .header {
   height: 220px;
   border-radius: 8px;
-  background-size: cover;
-  background-position: center;
   position: relative;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
   margin-bottom: 2rem;
+  background-color: var(--paper-dim);
+}
+.header-img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 .overlay {
+  position: relative;
+  z-index: 1;
   background: linear-gradient(to top, rgba(31,51,80,0.88), rgba(31,51,80,0));
   width: 100%;
   padding: 1.5rem;
@@ -54,8 +60,7 @@
 
 .dish .image {
   height: 150px;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   background-color: var(--paper-dim);
 }
 

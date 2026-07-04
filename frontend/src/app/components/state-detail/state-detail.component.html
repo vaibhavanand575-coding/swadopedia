@@ -4,7 +4,8 @@
 <div *ngIf="error" class="state-msg error">Couldn't load this state. It may not exist, or the backend isn't running.</div>
 
 <div *ngIf="state" class="content">
-  <section class="header" [style.backgroundImage]="'url(' + state.imageUrl + ')'">
+  <section class="header">
+    <app-fallback-img class="header-img" [src]="state.imageUrl" [alt]="state.name" [seed]="state.id"></app-fallback-img>
     <div class="overlay">
       <p class="region">{{ state.region }}</p>
       <h1>{{ state.name }}</h1>
@@ -14,7 +15,9 @@
 
   <div class="dishes">
     <article class="dish" *ngFor="let dish of state.dishes">
-      <div class="image" [style.backgroundImage]="'url(' + dish.imageUrl + ')'"></div>
+      <div class="image">
+        <app-fallback-img [src]="dish.imageUrl" [alt]="dish.name" [seed]="dish.id"></app-fallback-img>
+      </div>
       <div class="body">
         <div class="row">
           <h3>{{ dish.name }}</h3>

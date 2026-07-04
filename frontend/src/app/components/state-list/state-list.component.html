@@ -10,8 +10,9 @@
 
 <div *ngIf="!loading && !error" class="grid">
   <a class="tile" *ngFor="let state of states" [routerLink]="['/states', state.id]">
-    <div class="image" [style.backgroundImage]="'url(' + state.imageUrl + ')'"
-         [style.backgroundColor]="'var(--paper-dim)'"></div>
+    <div class="image">
+      <app-fallback-img [src]="state.imageUrl" [alt]="state.name" [seed]="state.id"></app-fallback-img>
+    </div>
     <div class="body">
       <p class="region">{{ state.region }}</p>
       <h3>{{ state.name }}</h3>

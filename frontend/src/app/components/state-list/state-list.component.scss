@@ -41,8 +41,7 @@
 
 .image {
   height: 150px;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   background-color: var(--paper-dim);
 }
 
