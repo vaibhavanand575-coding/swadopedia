@@ -147,7 +147,7 @@ public class StateService {
                     "Chettinad_Chicken.JPG", "Hot"),
                 dish("tamilnadu-2", "Sambar",
                     "Tangy lentil stew with vegetables and tamarind.",
-                    "ثامبار.jpg", "Medium"),
+                    "Sambar_(dish).jpg", "Medium"),
                 dish("tamilnadu-3", "Filter coffee",
                     "Strong decoction coffee blended with frothed milk.",
                     "Indian_filter_coffee.jpg", "None")

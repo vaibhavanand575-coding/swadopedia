@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { StateSummary } from '../../models/state.model';
 import { StateService } from '../../services/state.service';
+import { FallbackImgComponent } from '../fallback-img/fallback-img.component';
 
 @Component({
   selector: 'app-state-list',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, FallbackImgComponent],
   templateUrl: './state-list.component.html',
   styleUrl: './state-list.component.scss'
 })
