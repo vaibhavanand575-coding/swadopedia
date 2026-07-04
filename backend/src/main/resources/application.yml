@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: swadopedia-service
+
+swadopedia:
+  cors:
+    allowed-origin: http://localhost:4200

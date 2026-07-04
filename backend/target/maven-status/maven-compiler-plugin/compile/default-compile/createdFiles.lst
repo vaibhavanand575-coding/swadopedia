@@ -1,0 +1,7 @@
+com\example\swadopedia\SwadopediaApplication.class
+com\example\swadopedia\model\Dish.class
+com\example\swadopedia\config\CorsConfig.class
+com\example\swadopedia\model\StateSummary.class
+com\example\swadopedia\model\State.class
+com\example\swadopedia\controller\StateController.class
+com\example\swadopedia\service\StateService.class

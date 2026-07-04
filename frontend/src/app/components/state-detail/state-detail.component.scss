@@ -1,0 +1,89 @@
+.back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--navy-soft);
+}
+.back:hover { color: var(--marigold-dark); }
+
+.state-msg { padding: 2rem 0; }
+.state-msg.error { color: var(--marigold-dark); }
+
+.header {
+  height: 220px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.overlay {
+  background: linear-gradient(to top, rgba(31,51,80,0.88), rgba(31,51,80,0));
+  width: 100%;
+  padding: 1.5rem;
+  color: var(--paper);
+}
+.region {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--marigold);
+  margin: 0 0 0.2rem;
+}
+.header h1 { font-size: 2rem; color: var(--paper); }
+.tagline { margin: 0.3rem 0 0; font-size: 0.9rem; opacity: 0.85; }
+
+.dishes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.dish {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.dish .image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--paper-dim);
+}
+
+.dish .body { padding: 1rem; }
+
+.dish .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.dish h3 { font-size: 1.05rem; }
+
+.spice {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--marigold-dark);
+  background: var(--paper-dim);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.dish p {
+  font-size: 0.85rem;
+  color: var(--navy-soft);
+  line-height: 1.45;
+  margin: 0;
+}

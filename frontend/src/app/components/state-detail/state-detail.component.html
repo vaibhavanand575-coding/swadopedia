@@ -1,0 +1,27 @@
+<a routerLink="/" class="back">&larr; All states</a>
+
+<div *ngIf="loading" class="state-msg">Loading&hellip;</div>
+<div *ngIf="error" class="state-msg error">Couldn't load this state. It may not exist, or the backend isn't running.</div>
+
+<div *ngIf="state" class="content">
+  <section class="header" [style.backgroundImage]="'url(' + state.imageUrl + ')'">
+    <div class="overlay">
+      <p class="region">{{ state.region }}</p>
+      <h1>{{ state.name }}</h1>
+      <p class="tagline">{{ state.tagline }}</p>
+    </div>
+  </section>
+
+  <div class="dishes">
+    <article class="dish" *ngFor="let dish of state.dishes">
+      <div class="image" [style.backgroundImage]="'url(' + dish.imageUrl + ')'"></div>
+      <div class="body">
+        <div class="row">
+          <h3>{{ dish.name }}</h3>
+          <span class="spice">{{ dish.spiceLevel }}</span>
+        </div>
+        <p>{{ dish.description }}</p>
+      </div>
+    </article>
+  </div>
+</div>

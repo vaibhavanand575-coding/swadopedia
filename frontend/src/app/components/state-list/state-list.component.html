@@ -1,0 +1,22 @@
+<section class="hero">
+  <h1>Every state has a flavor of its own.</h1>
+  <p>Pick a state to see the dishes it's known for &mdash; from tandoor smoke in Punjab to coconut and kokum on the Goan coast.</p>
+</section>
+
+<div *ngIf="loading" class="state-msg">Loading states&hellip;</div>
+<div *ngIf="error" class="state-msg error">
+  Couldn't reach the Swadopedia service. Make sure the Spring Boot backend is running on port 8081.
+</div>
+
+<div *ngIf="!loading && !error" class="grid">
+  <a class="tile" *ngFor="let state of states" [routerLink]="['/states', state.id]">
+    <div class="image" [style.backgroundImage]="'url(' + state.imageUrl + ')'"
+         [style.backgroundColor]="'var(--paper-dim)'"></div>
+    <div class="body">
+      <p class="region">{{ state.region }}</p>
+      <h3>{{ state.name }}</h3>
+      <p class="tagline">{{ state.tagline }}</p>
+      <p class="count">{{ state.dishCount }} dishes</p>
+    </div>
+  </a>
+</div>
