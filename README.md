@@ -73,6 +73,12 @@ Open `http://localhost:4200` in your browser.
 
 State landmark and dish photos are sourced from **Wikimedia Commons** (Creative Commons licensed). The URLs use the `Special:FilePath` redirect format, which is permanent and stable. If any specific image fails to load, the UI falls back to a neutral background color — you can swap the URL in `StateService.java` for a different Wikimedia Commons filename or your own hosted image.
 
+## Other apps in this repo
+
+- **`site-generator/`** — a separate app: search local businesses by country/city/sector, pick
+  one from the top 5 matches, and run a 10-stage pipeline that researches it, pulls brand
+  imagery, and generates a demo website. See `site-generator/README.md`.
+
 ## Next steps (good portfolio extensions)
 
 - Add a search/filter bar on the home page (by region or state name)
